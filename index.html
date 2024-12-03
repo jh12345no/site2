@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blue bottle</title>
+    <!-- style파일을 연결 -->
+    <link rel="stylesheet" href="style.css">
+ <!-- 폰트어썸 CDN :  -->
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        main{
+            background-image: url("images/women-7341444_1280.png");
+            background-repeat: no-repeat;
+            height: 600px;
+            background-size: 100%;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #555555;
+            font-weight: 600;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo{
+            margin-left: 30px;
+        }
+        header{
+            background-color:white;
+            /* solid 실선 dashed 점선 뒤에 색 붙임 색깔 변경 */
+            /* boeder:1px deshed red; */
+            height:70px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 시맨틱 태그 : div와 기능은 같고 이름만 다른거 -->
+    <header>
+    <div class="logo">
+        <a href="index.htlm"><!--이거 이미지 넣고 크기수정 명령어 logo는 이미지 안나올때 표시-->
+            <img src="images/Blue Bottle.png" alt="logo" width="60">
+        </a>
+    </div>
+
+    <div class="nav">
+        <a href="#">ABOUT</a>
+        <a href="#">CAFES</a>
+        <a href="#">MENU</a>
+        <a href="#">COMPANY</a>
+        <a href="#">NEWS</a>
+    </div>
+</header>
+
+<main>
+    <div>
+        <h2>안녕 모두들</h2>
+        <div class="hello">블루 보틀에 오신것을 
+           <br> 환영합니다</div>
+            <button>블루보틀 소개</button>
+    </div>
+</main>
+
+<footer>
+    CONNECT WITH US <br> <br>
+<i class="fa-brands fa-internet-explorer"></i>
+<i class="fa-brands fa-intercom"></i>
+</footer>
+</body>
+</html>

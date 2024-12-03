@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 나타내기</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    #button {
+      visibility: hidden; /* 처음에 버튼을 보이지 않게 숨깁니다 */
+      opacity: 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transform: scale(0.8);
+      transition: opacity 5s ease, transform 5s ease, visibility 0s linear 5s; /* 5초 동안 천천히 나타남 */
+    }
+
+    #button.show {
+      visibility: visible; /* show 클래스가 추가되면 버튼이 보이도록 설정 */
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+
+  <button id="button">클릭하세요</button>
+
+  <script>
+    // 10초 뒤에 버튼을 5초 동안 천천히 나타나게 함
+    setTimeout(() => {
+      const button = document.getElementById('button');
+      button.classList.add('show');
+    }, 10000); // 10000ms = 10초 후
+  </script>
+
+</body>
+</html>

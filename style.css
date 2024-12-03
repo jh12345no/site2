@@ -1,0 +1,24 @@
+
+/* 모든 요소 margin 과 padding 기본값 0으로 */
+/* 마진:바깥여백 패딩: 안쪽여백 */
+*{maegin: 0; padding: 0;}
+
+header{
+    background-color:white;
+    /* solid 실선 dashed 점선 뒤에 색 붙임 색깔 변경 */
+    /* boeder:1px deshed red; */
+    height:70px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{color:#01a1dd}
+
+.nav s{
+    padding: 0 15px;
+}
+/* align-items: center; */
